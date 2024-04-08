@@ -1,0 +1,157 @@
+:root {
+    --main-bg: rgb(253, 134, 154);
+    --main-bg-dark: hsl(197, 97%, 46%);
+    --main-text: hsl(0, 0%, 0%);
+    --main-light-text: hsl(0, 0%, 100%);
+    --dev: 24px;
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--main-bg);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--main-bg-dark);
+}
+
+header .logo {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+nav ul {
+    display: inline-flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--main-text);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--main-light-text);
+}
+
+.alt{
+    color:  var(--main-bg);
+}
+#home {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-image: url(assets/ursa-bavcar-6O4zf9lga6Q-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--main-light-text);
+}
+#home h1{
+    font-size: 3rem;
+}
+
+.words{
+    width: 50%;
+}
+
+.side-bar {
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.185);
+    backdrop-filter: blur(5px);
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: all 0.5s ease;
+}
+
+.menu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.show {
+    display: flex;
+    animation: slideIn 0.5s ease;
+}
+
+.get {
+    padding: 1rem 2rem;
+    background-color: var(--main-bg-dark);
+    color: var(--main-light-text);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+}
+
+/* the @keyframe is use for animation here */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.blogs{
+    background-color: var(--main-light-text);
+    padding: 1rem;
+}
+
+/* the @media is what we use to declear screen sizes */
+@media only screen and (max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .side-bar li {
+        border-bottom: 1px solid var(--main-bg-dark);
+    }
+
+    .menu {
+        display: block;
+    }
+
+    header {
+        background: none;
+    }
+    .words{
+        width: 80%;
+    }
+}

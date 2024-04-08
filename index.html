@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">😊</div>
+
+      <!-- 
+        Navigation for Desktop view
+        -The "hide-on-mobile" class is set in css to be hidedn
+        when the screen gets to 768px screen width. All elements
+        with this class will will disappear from the screen on mobile
+       -->
+      <nav>
+        <ul>
+          <li class="hide-on-mobile"><a href="#">Home</a></li>
+          <li class="hide-on-mobile"><a href="#">Blog</a></li>
+          <li class="hide-on-mobile"><a href="#">Products</a></li>
+          <li class="hide-on-mobile"><a href="#">Services</a></li>
+          <li class="hide-on-mobile"><a href="#"> About Us</a></li>
+          <!-- The menu here is to show menu icon on mobile
+          it is set to be hidden on desktop screen -->
+          <li class="menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </li>
+        </ul>
+        <!-- side bar: this is our navigation for mobile phone-->
+        <ul class="side-bar">
+          <li class="hide-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#"> About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- This is the hero section on our page -->
+      <section id="home">
+        <h1>Welcome to an <span class="alt">Happy Place</span></h1>
+        <p class="words">
+          Where Happiness meets comfort. Take a journey deep into our services
+          and forget the sorrows of the past by embracing a new life full of joy
+          and happiness.
+        </p>
+        <button class="get">Get Started</button>
+      </section>
+      <!-- this section is to mock a block sectiion for our site, this is where we apply grid -->
+      <section id="blog">
+        <div class="blogs">
+          <h2 class="topic">How to stay happy</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsam doloribus error id. Inventore laboriosam deleniti doloremque corporis minima natus tenetur repellendus quod eveniet neque?</p>
+          <h3 class="author">Shakespare Jon</h3>
+        </div>
+        <div class="blogs">
+        <h2 class="topic">How to stay happy</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsam doloribus error id. Inventore laboriosam deleniti doloremque corporis minima natus tenetur repellendus quod eveniet neque?</p>
+        <h3 class="author">Shakespare Jon</h3>
+      </div>
+      <div class="blogs">
+        <h2 class="topic">How to stay happy</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsam doloribus error id. Inventore laboriosam deleniti doloremque corporis minima natus tenetur repellendus quod eveniet neque?</p>
+        <h3 class="author">Shakespare Jon</h3>
+      </div>
+      <div class="blogs">
+      <h2 class="topic">How to stay happy</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsam doloribus error id. Inventore laboriosam deleniti doloremque corporis minima natus tenetur repellendus quod eveniet neque?</p>
+      <h3 class="author">Shakespare Jon</h3>
+    </div>
+      
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
